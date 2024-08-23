@@ -1,0 +1,8 @@
+<span>Change Theme: </span>
+<div>
+  @for(button of buttons; track button.title) {
+  <button (click)="button.click(button.title)" [ngClass]="button.ngClass()">
+    {{ button.title | uppercase }}
+  </button>
+  }
+</div>

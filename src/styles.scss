@@ -1,0 +1,21 @@
+:root {
+  --base-white-color: #ffffff;
+  --base-cod-gray-color: #1c1c1c;
+  --base-tundora-color: #4a4a4a;
+  --base-selective-yellow-color: #ffb800;
+  --base-alto-color: #d9d9d9;
+  --base-dove-gray-color: #6d6d6d;
+  --base-silver-chalice-color: #aeaeae;
+}
+
+[theme="light"] {
+  --calc-bg: var(--base-tundora-color);
+  --calc-btn-clear-and-control-bg: var(--base-alto-color);
+  --calc-btn-number-and-decimal-bg: var(--base-alto-color);
+}
+
+[theme="dark"] {
+  --calc-bg: var(--base-cod-gray-color);
+  --calc-btn-clear-and-control-bg: var(--base-silver-chalice-color);
+  --calc-btn-number-and-decimal-bg: var(--base-dove-gray-color);
+}
