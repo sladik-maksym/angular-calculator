@@ -6,11 +6,12 @@ import {
   CALC_INITIAL_DISPLAY_VALUE,
   CALC_OPERATOR_MAP,
 } from '../../constants/calculator';
+import { ButtonHoverEffectDirective } from '../../directives/button-hover-effect.directive';
 
 @Component({
   selector: 'app-calculator',
   standalone: true,
-  imports: [NgClass],
+  imports: [NgClass, ButtonHoverEffectDirective],
   templateUrl: './calculator.component.html',
   styleUrl: './calculator.component.scss',
 })

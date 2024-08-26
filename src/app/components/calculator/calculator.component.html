@@ -7,9 +7,10 @@
 <div class="calculatorButtons">
   @for (button of calcButtons; track button.title; let idx = $index) { @let
   buttonClass = "btnDefault" + ' ' + button.class; @let isBtnZero = button.title
-  === '0';
+  === '0'; @let buttonHoverOpacity = '0.8';
 
   <button
+    [appButtonHoverEffect]="buttonHoverOpacity"
     [class]="buttonClass"
     [ngClass]="{
       btnZero: isBtnZero
